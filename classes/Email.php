@@ -3,6 +3,10 @@
 namespace Classes;
 use PHPMailer\PHPMailer\PHPMailer;
 
+use Dotenv\Dotenv as Dotenv;
+$dotenv = Dotenv::createImmutable('../includes/.env');
+$dotenv->safeLoad();
+
 
 class Email {
 
