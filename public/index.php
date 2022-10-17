@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../includes/app.php';
 
-use Ccontrollers\APIController;
+use Controllers\APIController;
 use Controllers\CitaController;
 use Controllers\LoginController;
 use Controllers\AdminController;
