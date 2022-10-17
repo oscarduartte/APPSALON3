@@ -2,15 +2,13 @@
 
 namespace Classes;
 use PHPMailer\PHPMailer\PHPMailer;
-<<<<<<< HEAD
 
 use Dotenv\Dotenv as Dotenv;
 $dotenv = Dotenv::createImmutable('../includes/.env');
 $dotenv->safeLoad();
 
-=======
 #prueba
->>>>>>> 16a53bbbf870815e7c91b129c9a9160558d546f7
+#prueba2
 
 class Email {
 
