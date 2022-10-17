@@ -2,7 +2,7 @@
 
 namespace Classes;
 use PHPMailer\PHPMailer\PHPMailer;
-
+#prueba
 
 class Email {
 
