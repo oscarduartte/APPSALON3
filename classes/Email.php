@@ -42,7 +42,7 @@ class Email {
     $contenido= "<html>";
     $contenido.= "<p><strong> Hola". $this->nombre ."</strong> Haz creado tu cuenta
     en app salon, solo debes confirmarla dando click en el siguiente link: </p> " ;
-    $contenido.="<p>Presiona aqui: <a href='https://obscure-reaches-67628.herokuapp.com/confirmar-cuenta?token=" . $this->token ."' >Confirmar Cuenta</a> </p> ";
+    $contenido.="<p>Presiona aqui: <a href='" . $_ENV['SERVER_HOST']  . $this->token ."' >Confirmar Cuenta</a> </p> ";
     $contenido.= "<p>si no solicitaste este cambio, ignora este mensaje</p>";
     $contenido.= "</html>";
 
@@ -76,7 +76,7 @@ class Email {
      $contenido= "<html>";
      $contenido.= "<p><strong> Hola". $this->nombre ."</strong> Haz solicitado
      reestablecer tu password, sigue el siguiente enlace para hacerlo </p> " ;
-     $contenido.="<p>Presiona aqui: <a href='https://obscure-reaches-67628.herokuapp.com/recuperar?token=" . $this->token ."' >Recuperar Password</a> </p> ";
+     $contenido.="<p>Presiona aqui: <a href='" . $_ENV['SERVER_HOST'] . $this->token ."' >Recuperar Password</a> </p> ";
      $contenido.= "<p>si no solicitaste este cambio, ignora este mensaje</p>";
      $contenido.= "</html>";
  
