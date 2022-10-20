@@ -21,6 +21,7 @@ class ServicioController{
 
     public static function crear(Router $router) {
         
+        session_start();
         isAdmin();
         $servicio = new Servicio(); //creo un objeto vacio para el servicio
         $alertas = [];
@@ -48,6 +49,8 @@ class ServicioController{
     }
 
     public static function actualizar(Router $router) {
+
+        session_start();
         isAdmin();
 
         if(!is_numeric($_GET['id'])) return;
@@ -75,6 +78,7 @@ class ServicioController{
     }
 
     public static function eliminar(Router $router) {
+        
         isAdmin();
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
