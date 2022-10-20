@@ -7,9 +7,9 @@ use Model\Servicio;
 
 class ServicioController{
     public static function index(Router $router) {
-
+        
+        session_start();
         isAdmin();
-
         $servicios = Servicio::all();
 
         $router->render('servicios/index', [
